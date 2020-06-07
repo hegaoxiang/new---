@@ -1,0 +1,1 @@
+将所有的texture一块传入至shader中，

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{15682670-9F8D-436E-BB6C-1FE5D631CB9D}</ProjectGuid>
+    <RootNamespace>My01DirectX11Initialization</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>GEngine</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)Debug\build</OutDir>
+    <IntDir>$(SolutionDir)Debug\Intermediate</IntDir>
+    <IncludePath>D:\迅雷下载\boost_1_72_0\boost_1_72_0;$(SolutionDir)GEngine;$(SolutionDir)GEngine\Vendor;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\迅雷下载\boost_1_72_0\boost_1_72_0\stage\lib;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\GEditor\bin\Debug</OutDir>
+    <IntDir>$(SolutionDir)Debug</IntDir>
+    <IncludePath>D:\迅雷下载\boost_1_72_0\boost_1_72_0;D:\Documents\Tencent Files\1297695247\FileRecv\DirectX11-With-Windows-SDK-v1.27.1\DirectX11-With-Windows-SDK\01 DirectX11 Initialization;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\迅雷下载\boost_1_72_0\boost_1_72_0\stage\lib;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjecName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)</OutDir>
+    <IntDir>VS2019_Win10\$(Configuration)\</IntDir>
+    <IncludePath>D:\迅雷下载\boost_1_72_0\boost_1_72_0;D:\Documents\Tencent Files\1297695247\FileRecv\DirectX11-With-Windows-SDK-v1.27.1\DirectX11-With-Windows-SDK\01 DirectX11 Initialization;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\迅雷下载\boost_1_72_0\boost_1_72_0\stage\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(ProjectDir)</OutDir>
+    <IntDir>VS2019_Win10\$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath>D:\迅雷下载\boost_1_72_0\boost_1_72_0;D:\Documents\Tencent Files\1297695247\FileRecv\DirectX11-With-Windows-SDK-v1.27.1\DirectX11-With-Windows-SDK\01 DirectX11 Initialization;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\迅雷下载\boost_1_72_0\boost_1_72_0\stage\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>EDITOR;_UNICODE;UNICODE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\Documents\Tencent Files\1297695247\FileRecv\DirectX11-With-Windows-SDK-v1.27.1\DirectX11-With-Windows-SDK\01 DirectX11 Initialization\Vendor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>EDITOR;_UNICODE;UNICODE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\Documents\Tencent Files\1297695247\FileRecv\DirectX11-With-Windows-SDK-v1.27.1\DirectX11-With-Windows-SDK\01 DirectX11 Initialization\Vendor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_UNICODE;UNICODE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\Documents\Tencent Files\1297695247\FileRecv\DirectX11-With-Windows-SDK-v1.27.1\DirectX11-With-Windows-SDK\01 DirectX11 Initialization\Vendor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_UNICODE;UNICODE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="GDX11Renderer\GDxMesh.cpp" />
+    <ClCompile Include="GDX11Renderer\GDxVertexIndexBuffer.cpp" />
+    <ClCompile Include="GEngineDLL\EGCore.cpp" />
+    <ClCompile Include="GDX11Renderer\GDxRenderer.cpp" />
+    <ClCompile Include="GDX11Renderer\GDxRendererFactory.cpp" />
+    <ClCompile Include="GDX11Renderer\GDxTexture.cpp" />
+    <ClCompile Include="GDX11Renderer\GDxTextureLoader.cpp" />
+    <ClCompile Include="GEngine\GCore.cpp" />
+    <ClCompile Include="DXOthers\GameObject.cpp" />
+    <ClCompile Include="GDX11Renderer\Effect\LightEffect.cpp" />
+    <ClCompile Include="GGenericInfra\GGiEngineUtil.cpp" />
+    <ClCompile Include="GRendererInfra\GRiRenderer.cpp" />
+    <ClCompile Include="GEngine\GCameraController.cpp" />
+    <ClCompile Include="DXOthers\DDSTextureLoader.cpp" />
+    <ClCompile Include="DXOthers\WICTextureLoader.cpp" />
+    <ClCompile Include="GDX11Renderer\Effect\SkyEffect.cpp" />
+    <ClCompile Include="GRendererInfra\GRiCamera.cpp" />
+    <ClCompile Include="GRendererInfra\GRiRendererFactory.cpp" />
+    <ClCompile Include="GRendererInfra\GRiTextureLoader.cpp" />
+    <ClCompile Include="GRendererInfra\GRiTexture.cpp" />
+    <ClCompile Include="GRendererInfra\GRiMesh.cpp" />
+    <ClCompile Include="GRendererInfra\GRiSubmesh.cpp" />
+    <ClCompile Include="GRendererInfra\GRiMaterial.cpp" />
+    <ClCompile Include="GRendererInfra\GRiVertex.cpp" />
+    <ClCompile Include="GRendererInfra\GRiGeometryGenerator.cpp" />
+    <ClCompile Include="GRendererInfra\GRiMeshData.cpp" />
+    <ClCompile Include="GRendererInfra\GRiSceneObject.cpp" />
+    <ClCompile Include="GUI\Editor.cpp" />
+    <ClCompile Include="GDX11Renderer\Effect\BasicEffect.cpp" />
+    <ClCompile Include="DXOthers\d3dUtil.cpp" />
+    <ClCompile Include="DXOthers\DXTrace.cpp" />
+    <ClCompile Include="GRendererInfra\GRiTimer.cpp" />
+    <ClCompile Include="Graphics\RenderStates.cpp" />
+    <ClCompile Include="GUI\GUI.cpp" />
+    <ClCompile Include="Logic\LogicSystem.cpp" />
+    <ClCompile Include="GEngine\GScene.cpp" />
+    <ClCompile Include="Graphics\TextureRender.cpp" />
+    <ClCompile Include="DXOthers\TextureManage.cpp" />
+    <ClCompile Include="Vendor\IMGUI\imgui.cpp" />
+    <ClCompile Include="Vendor\IMGUI\ImGuizmo.cpp" />
+    <ClCompile Include="Vendor\IMGUI\imgui_demo.cpp" />
+    <ClCompile Include="Vendor\IMGUI\imgui_draw.cpp" />
+    <ClCompile Include="Vendor\IMGUI\imgui_impl_dx11.cpp" />
+    <ClCompile Include="Vendor\IMGUI\imgui_impl_win32.cpp" />
+    <ClCompile Include="Vendor\IMGUI\imgui_stdlib.cpp" />
+    <ClCompile Include="Vendor\IMGUI\imgui_widgets.cpp" />
+    <ClCompile Include="Graphics\Vertex.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GDX11Renderer\GDXBuffer.h" />
+    <ClInclude Include="GDX11Renderer\GDxMesh.h" />
+    <ClInclude Include="GDX11Renderer\GDxPreInclude.h" />
+    <ClInclude Include="GDX11Renderer\GDxVertexIndexBuffer.h" />
+    <ClInclude Include="GEngineDLL\EGCore.h" />
+    <ClInclude Include="GDX11Renderer\GDxRenderer.h" />
+    <ClInclude Include="GDX11Renderer\GDxRendererFactory.h" />
+    <ClInclude Include="GDX11Renderer\GDxTexture.h" />
+    <ClInclude Include="GDX11Renderer\GDxTextureLoader.h" />
+    <ClInclude Include="GEngine\GCore.h" />
+    <ClInclude Include="GGenericInfra\GGiEngineUtil.h" />
+    <ClInclude Include="GRendererInfra\GRiRenderer.h" />
+    <ClInclude Include="GEngine\GCameraController.h" />
+    <ClInclude Include="GRendererInfra\GRiCamera.h" />
+    <ClInclude Include="GRendererInfra\GRiRendererFactory.h" />
+    <ClInclude Include="GRendererInfra\GRiTextureLoader.h" />
+    <ClInclude Include="GRendererInfra\GRiTexture.h" />
+    <ClInclude Include="GRendererInfra\GRiMesh.h" />
+    <ClInclude Include="GRendererInfra\GRiSubmesh.h" />
+    <ClInclude Include="GRendererInfra\GRiMaterial.h" />
+    <ClInclude Include="GRendererInfra\GRiPreInclude.h" />
+    <ClInclude Include="GRendererInfra\GRiVertex.h" />
+    <ClInclude Include="GRendererInfra\GRiGeometryGenerator.h" />
+    <ClInclude Include="GRendererInfra\GRiMeshData.h" />
+    <ClInclude Include="GRendererInfra\GRiSceneObject.h" />
+    <ClInclude Include="GUI\Editor.h" />
+    <ClInclude Include="Graphics\Buffer.h" />
+    <ClInclude Include="d3dApp.h" />
+    <ClInclude Include="DXOthers\d3dUtil.h" />
+    <ClInclude Include="DXOthers\DXTrace.h" />
+    <ClInclude Include="GameApp.h" />
+    <ClInclude Include="GRendererInfra\GRiTimer.h" />
+    <ClInclude Include="GDX11Renderer\Effect\EffectHelper.h" />
+    <ClInclude Include="GDX11Renderer\Effect\Effects.h" />
+    <ClInclude Include="Graphics\Geometry.h" />
+    <ClInclude Include="Graphics\RenderStates.h" />
+    <ClInclude Include="GUI\GUI.h" />
+    <ClInclude Include="Logic\LogicSystem.h" />
+    <ClInclude Include="GEngine\GScene.h" />
+    <ClInclude Include="Graphics\TextureRender.h" />
+    <ClInclude Include="Graphics\Vertex.h" />
+    <ClInclude Include="Graphics\SkyRender.h" />
+    <ClInclude Include="DXOthers\TextureManage.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Text.txt" />
+    <Text Include="TODO.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

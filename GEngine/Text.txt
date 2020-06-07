@@ -1,0 +1,5 @@
+添加一个component需要改三个地方，nameMap，toggle还有定义
+
+mouse 
+
+引擎到时候添加个配置信息。添加一个bool是否开启天空盒
